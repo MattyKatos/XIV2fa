@@ -1,0 +1,15 @@
+{
+  "name": "xiv2fa",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Generate a TOTP 2FA code from a secret and send it to an HTTP endpoint.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "otplib": "^12.0.1"
+  }
+}
