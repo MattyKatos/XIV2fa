@@ -1,8 +1,9 @@
 const dotenv = require('dotenv');
 const net = require('net');
+const path = require('path');
 const { authenticator } = require('otplib');
 
-dotenv.config();
+dotenv.config({ path: path.join(__dirname, '..', '.env') });
 
 function normalizeSecretAndOptions(input) {
   const raw = String(input || '').trim();
